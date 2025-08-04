@@ -1,0 +1,220 @@
+/* ======== ESTILO GENERAL ======== */
+body.index {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
+
+/* ======== LISTA DE CARRERAS ======== */
+ul#listaCarreras {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  width: 90%;
+}
+
+ul#listaCarreras li {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+ul#listaCarreras li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+ul#listaCarreras a {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul#listaCarreras button {
+  margin-top: 8px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+ul#listaCarreras .editar {
+  background: #ffce00;
+  color: #333;
+}
+
+ul#listaCarreras .editar:hover {
+  background: #ffd633;
+}
+
+ul#listaCarreras .borrar {
+  background: #ff4b5c;
+  color: #fff;
+}
+
+ul#listaCarreras .borrar:hover {
+  background: #ff6b7c;
+}
+
+/* ======== BOTÓN AGREGAR ======== */
+.container-btn {
+  margin-top: 20px;
+}
+
+#agregarCarrera {
+  background: #00c9a7;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#agregarCarrera:hover {
+  background: #00e0b5;
+  transform: scale(1.05);
+}
+
+/*LOGIN */
+body.login {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #24315e, #24315e);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor general */
+.login-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Tarjetas de login */
+.login-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+.login-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #24315e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Formularios */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs y selects */
+.login-card input,
+.login-card select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+}
+
+/* Botones */
+.login-card button {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-card button:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  transform: scale(1.03);
+}
+
+/* Labels */
+label {
+  color: #24315e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Mensaje de error */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ✅ Logo en esquina superior izquierda */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 999;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
